@@ -17,5 +17,6 @@ int main(){
     //cout << strxfrm(mystringTwo, 3);
 
     cout  << endl<<strcoll(mystringTwo, mystringChar)<<endl;
+    cout << strcmp("dawidc", "dawidba") << endl;
     return 0;
 }
