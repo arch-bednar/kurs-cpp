@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 
-void p(){
+void print(){
   std::string line;
   std::cout<<"Podaj dowolny napis ";
   std::getline(std::cin, line);
