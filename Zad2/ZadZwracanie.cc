@@ -2,53 +2,38 @@
 
 using namespace std;
 
-int referencja(int &a);
-int wskaznik(int a);
-int wskaznik(int *a);
-int wartosc(int a);
-
-int main(int argc, char *argv[]){
-    
-    int value = 4;
-    int *valueWsk = &value;
-    int * valueWsk1;
-    int &valueRef = value;
-    valueWsk1 = &value;
-
-    cout << *valueWsk << endl << *valueWsk1;
-    value = 5;
-
-    cout << endl <<*valueWsk << endl << *valueWsk1;
-
-    cout << endl << referencja(valueRef);
-
-    cout << endl << value;
-
-    cout << endl << wskaznik(*valueWsk1);
-
-    cout << endl << wskaznik(valueWsk);
-
-    cout << endl << *valueWsk1 << *valueWsk;
-
-    cout << endl << wartosc(value);
+int &ref(){
+    static int num=3;
+    return num;
 }
 
-int referencja(int &a){
-    return a++;
+int* wsk(){
+    static int a = 5;
+    int *b=&a;
+    return &a;
 }
 
-int wskaznik(int a){
-    return ++a;
+int value(){
+    return 4;
 }
 
-int wskaznik(int *a){
-    return *(a++);
+int* tab(){
+    static int t[3] {0,1,2};
+    return t;
 }
 
-int wartosc(int a){
-    return --a;
-}
-
-int tablica(){
-    return 3;
+int main(){
+    int a, *b;
+    int *arr;
+    a = ref();
+    cout << a;
+    b=wsk();
+    cout << endl << *b;
+    a=value();
+    cout <<endl <<a << endl;
+    arr=tab();
+    cout << endl;
+    for (int i = 0; i < 3; i++)
+        cout << *(arr+i);
+    cout << endl;
 }

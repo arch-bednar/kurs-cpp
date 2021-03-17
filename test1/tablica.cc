@@ -3,8 +3,8 @@
 using namespace std;
 
 void pobierzTab(int tab[]){
-  for (int i = 0; i <= sizeof(&tab)/sizeof(*(tab+1)); i++){
-        cout << tab[i] << endl;
+    for (int i = 0; i <= sizeof(&tab)/sizeof(*(tab+1)); i++){
+            cout << tab[i] << endl;
     }
 }
 

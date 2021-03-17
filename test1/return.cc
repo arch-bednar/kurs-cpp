@@ -32,6 +32,8 @@ int main(){
     a=value();
     cout <<endl <<a << endl;
     arr=tab();
+    cout << endl;
     for (int i = 0; i < 3; i++)
         cout << *(arr+i);
+    cout << endl;
 }
