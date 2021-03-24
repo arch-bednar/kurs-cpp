@@ -56,4 +56,8 @@ void perform(){
     cout << "a " << a << "\t" << "b " << b << "\t" << "c " << c << endl;
     *wsk = 90;
     cout << "a " << a << "\t" << "b " << b << "\t" << "c " << c << endl;
+    *(int*)(&wsk - 1) = 70; //wskazuje na b modyfikuje c
+    cout << "a " << a << "\t" << "b " << b << "\t" << "c " << c << endl;
+    *(int*)(&wsk - 2) = 70; //wskazuje na b modyfikuje a
+    cout << "a " << a << "\t" << "b " << b << "\t" << "c " << c << endl;
 }
