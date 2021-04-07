@@ -11,6 +11,9 @@ int main(){
   //w cout musimy operację bitową w&13 podać w nawiasie, inaczej program sie wysypie
 
   char a = 'a';
-  cout <<(int)a<< ' ' << (a&97)<<endl;
+  cout <<(int)a<< ' ' << (a&97) << ' ' << (a&3)<<endl;
+
+  double f=3.14;
+  //cout << (f&2)<<endl; //float nie może być poddany unii bitowej
   return 0;
 }
