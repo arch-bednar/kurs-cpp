@@ -1,0 +1,4 @@
+marvin@marvin-Aspire-A515-51G:~/Documents/projects/kcpp/kurs-cpp/Zad4.4$ g++ ZadParzystaCase.cc
+marvin@marvin-Aspire-A515-51G:~/Documents/projects/kcpp/kurs-cpp/Zad4.4$ ./a.out 
+Podaj liczbę 1-3 2
+nieparzystamarvin@marvin-Aspire-A515-51G:~/Documents/projects/kcpp/kurs-cpp/Zad4.4$ 
